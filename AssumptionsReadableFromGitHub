@@ -1,0 +1,30 @@
+Assumptions 
+
+The Game of Life
+
+The board has a two-dimensional matrix of cells. The possible states for each cell are 0 or 1 (dead or alive). When viewing the grid we can break it up into groups of nine cells, giving 9 bits, or 512 possible neighbourhoods. In most cases, it would be impractical to define an outcome for every single possibility. The Game of Life gets around this problem by defining a set of rules according to general characteristics of the neighbourhood. 
+
+Rules:
+	- Underpopulation: Cell has < 2 neighbours  
+	- Overcrowding: Cell has > 3 neighbours 
+	- Survival: Cell has 2 or 3 neighbours
+	- Creation of life: Cell has = 3 neighbours 
+
+Applying these rules should give two scenarios:
+
+	- Scenario 1: None seeded grid with no live cells iterates and continues to have no live cells. 
+	- Scenario 2: Seeded grid with three horizontal cells, oscillates vertical and then horizontal again per 			 each iteration/generation. 
+
+When the code follows the original rules these two scenarios should be the outcomes however, the code will also work for a fully seeded grid or a randomly seeded grid.
+
+In Code:
+
+For this I used the language Java and graphical application Processing 3.
+
+The programme starts with a randomly seeded grid to demonstrate the effectiveness of the rules it obeys. 
+
+To simulate ‘Scenario 1’ press the ’c’ key to clear the grid of all seeds.
+
+To simulate ‘Scenario 2’ press the ‘ ‘ key (spacebar) to pause the iteration, press the ‘c’ key to clear the board, then as long as the board is ‘paused’ draw the three live cells in the centre of the grid using the mouse, after this press ‘ ‘ key (spacebar) again to ‘play’ the next iteration and simulate the expected outcome.  
+
+To reset the simulation press the ‘r’ key. 
